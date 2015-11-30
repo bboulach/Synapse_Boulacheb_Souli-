@@ -12,10 +12,16 @@ public class ClazzDaoTest extends AbstractDaoTest {
 
     private static final int EXISTING_RACE_ID = 1;
     private static final int UNEXISTING_RACE_ID = 99;
-
+    private static final int MOST_PLAYED = 5;
+    
     @Autowired
     ClazzDao clazzDao;
 
+    @Test
+    public void testListMostPlayed(){
+    	assertTrue(CollectionUtils.isNotEmpty(clazzDao.listMostPlayed(MOST_PLAYED)));
+    }
+    
     @Test
     public void testListClassForExistingRace() {
         assertTrue(CollectionUtils.isNotEmpty(clazzDao.listClassForRace(EXISTING_RACE_ID)));
