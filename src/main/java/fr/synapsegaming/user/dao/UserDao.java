@@ -33,5 +33,7 @@ public interface UserDao extends Dao<User, Long> {
     
     public List<User> listUsersWithoutPicture();
     
+    public List<User> listUsersMostActive(int nbUsersActive);
+    
 
 }

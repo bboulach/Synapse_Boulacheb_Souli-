@@ -18,4 +18,6 @@ public interface StatistiquesService {
 	
 	public List<User> getUsersWithoutPicture();
 	
+	public List<User> getUsersMostActive();
+	
 }

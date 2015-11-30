@@ -78,5 +78,13 @@ public class StatistiquesServiceImpl implements StatistiquesService {
 		return test;
 	}
 	
+	@Override
+	public List<User> getUsersMostActive() {
+		List<User> test = userDao.listUsersMostActive(NB_USER_MOST_ACTIVE);
+		if( test.isEmpty() == true){
+			System.out.println("Liste des utilisateurs les plus actifs vide");
+		}
+		return test;
+	}
 	
 }

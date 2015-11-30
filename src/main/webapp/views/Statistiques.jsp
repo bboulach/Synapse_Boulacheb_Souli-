@@ -46,7 +46,7 @@
 		<h3>Statistiques</h3>
 		<h4>Top 5 des classes les plus jouées</h4>
 			<c:forEach items="${ClazzMostPlayed}" var="clazz">
-			<div>${ clazz.name }	<img src = "${ clazz.getImg()}"> </div>
+			<div>${ clazz.name }	<img src="${clazz.img}"> </div>
 			</c:forEach>
 			
 			<h4>Top 5 des races les plus jouées</h4>
@@ -61,7 +61,12 @@
 			
 			<h4>Utilisateurs sans Avatar personalisé (Pensez à en mettre un :) )</h4>
 			<c:forEach items="${UsersWithoutPicture}" var="users_pictures">
-			<div>${ users_pictures.name }</div>
+			<div>${ users_pictures.nickname }</div>
+			</c:forEach>
+			
+			<h4>Utilisateurs les plus actifs</h4>
+			<c:forEach items="${UsersMostActive}" var="users_mostActive">
+			<div>${ users_mostActives.name }</div>
 			</c:forEach>
 			
 	</div>

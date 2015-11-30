@@ -13,6 +13,7 @@ import fr.synapsegaming.statistiques.service.StatistiquesService;
 import fr.synapsegaming.ui.service.ResourceService;
 
 
+
 /**
  * <b>StatistiquesController</b> route every action made from the "Statistiques" page
  * 
@@ -32,6 +33,9 @@ public class StatistiquesController extends AbstractController {
 	
 	@Autowired
 	StatistiquesService statistiquesService;
+	
+	
+	
    
     /**
      * The default constructor to initialize the page
@@ -50,6 +54,7 @@ public class StatistiquesController extends AbstractController {
         page.addObject("RaceMostPlayed", statistiquesService.getRaceMostPlayed());
         page.addObject("SpecializationMostPlayed", statistiquesService.getSpecializationMostPlayed());
         page.addObject("UsersWithoutPicture", statistiquesService.getUsersWithoutPicture());
+        //page.addObject("UsersMostActive", statistiquesService.getUsersMostActive());
         
 
        /* if (user != null){

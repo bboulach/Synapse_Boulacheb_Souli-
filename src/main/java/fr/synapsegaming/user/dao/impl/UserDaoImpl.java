@@ -64,5 +64,27 @@ public class UserDaoImpl extends AbstractDao<User, Long> implements UserDao {
 	            session.close();
 	        }
 	}
+    
+    /*@SuppressWarnings("unchecked")
+	@Override
+	public List<User> listUsersMostActive(int nbUsersActive) {
+		 Session session = this.getSession();
+	        try {
+	        	//Query query = session.createQuery("from User u join
+	        	query.setMaxResults(nbUsersActive);
+	            return query.list();
+	        } catch (Exception e) {
+	            LOGGER.warn(e);
+	            return Collections.emptyList();
+	        } finally {
+	            session.close();
+	        }
+	}*/
+    
+
+
+    
+    
+    
  
 }
