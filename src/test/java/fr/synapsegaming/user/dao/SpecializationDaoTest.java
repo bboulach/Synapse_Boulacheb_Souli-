@@ -12,8 +12,15 @@ public class SpecializationDaoTest extends AbstractDaoTest {
 
     private static final int CLASS_ID_GETTING_SPECS = 1;
 
+	private static final int MOST_PLAYED = 5;
+
     @Autowired
     SpecializationDao specializationDao;
+    
+    @Test
+    public void testListMostPlayed(){
+		assertTrue(CollectionUtils.isNotEmpty(specializationDao.listMostPlayed(MOST_PLAYED)));
+    }
 
     @Test
     public void testListSpecsForClass() {

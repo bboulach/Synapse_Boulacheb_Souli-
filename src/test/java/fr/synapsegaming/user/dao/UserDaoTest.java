@@ -33,6 +33,11 @@ public class UserDaoTest extends AbstractDaoTest {
     UserDao userDao;
 
     @Test
+    public void testListUsersWithoutPicture(){
+		assertTrue(CollectionUtils.isNotEmpty(userDao.listUsersWithoutPicture()));
+    }
+    
+    @Test
     public void testFindWithExistingMail() {
         assertTrue(userDao.findByMail(EXISTING_MAIL).getName() != null);
     }
