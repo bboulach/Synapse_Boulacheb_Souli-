@@ -46,7 +46,9 @@
 		<h3>Statistiques</h3>
 		<h4>Top 5 des classes les plus jouées</h4>
 			<c:forEach items="${ClazzMostPlayed}" var="clazz">
-			<div>${ clazz.name }	<img src="${clazz.img}"> </div>
+			<%-- <div>${ clazz.name }	<img src="${clazz.img}"> </div> --%>
+			<div id="clazz_${ clazz.id }" class="clazz"><img src="<c:url value="${ clazz.img }" />" title="${ clazz.name }"/>${ clazz.name }</div>
+			</br></br></br></br></br></br>
 			</c:forEach>
 			
 			<h4>Top 5 des races les plus jouées</h4>
