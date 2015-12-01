@@ -43,46 +43,29 @@ public class StatistiquesServiceImpl implements StatistiquesService {
 
 	@Override
 	public List<Clazz> getClazzMostPlayed() {
-		List<Clazz> test = clazzDao.listMostPlayed( MOST_PLAYED_CLASSES);
-		if( test.isEmpty() == true){
-			System.out.println("Liste classe les plus joué vide");
-		}
-		return test;
+		return clazzDao.listMostPlayed( MOST_PLAYED_CLASSES);
 	}
 	
 	@Override
 	public List<Race> getRaceMostPlayed() {
-		List<Race> test = raceDao.listMostPlayed( MOST_PLAYED_RACES);
-		if( test.isEmpty() == true){
-			System.out.println("Liste Race les plus joué vide");
-		}
-		return test;
+		return raceDao.listMostPlayed( MOST_PLAYED_RACES);
 	}
 	
 	@Override
 	public List<Specialization> getSpecializationMostPlayed() {
-		List<Specialization> test = specializationDao.listMostPlayed( MOST_PLAYED_SPECIALIZATION);
-		if( test.isEmpty() == true){
-			System.out.println("Liste des spécialisations les plus joué vide");
-		}
-		return test;
+		return specializationDao.listMostPlayed( MOST_PLAYED_SPECIALIZATION);
 	}
 	
 	@Override
 	public List<User> getUsersWithoutPicture() {
-		List<User> test = userDao.listUsersWithoutPicture();
-		if( test.isEmpty() == true){
-			System.out.println("Liste des utilisateurs sans avatar vide");
-		}
-		return test;
+		return userDao.listUsersWithoutPicture();
 	}
 	
 	@Override
 	public List<User> getUsersMostActive() {
 		List<User> test = userDao.listUsersMostActive(NB_USER_MOST_ACTIVE);
-		if( test.isEmpty() == true){
-			System.out.println("Liste des utilisateurs les plus actifs vide");
-		}
+		if(test.isEmpty())
+			System.out.println("La liste userActive est vide.");
 		return test;
 	}
 	

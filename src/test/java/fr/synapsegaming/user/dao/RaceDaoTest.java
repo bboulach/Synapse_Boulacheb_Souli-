@@ -6,7 +6,9 @@ import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class RaceDaoTest {
+import fr.synapsegaming.commons.dao.AbstractDaoTest;
+
+public class RaceDaoTest extends AbstractDaoTest {
 
 	private static final int MOST_PLAYED = 5;
 

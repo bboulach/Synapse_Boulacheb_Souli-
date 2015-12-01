@@ -64,13 +64,14 @@ public class UserDaoImpl extends AbstractDao<User, Long> implements UserDao {
 	            session.close();
 	        }
 	}
+
     
-    /*@SuppressWarnings("unchecked")
+    @SuppressWarnings("unchecked")
 	@Override
 	public List<User> listUsersMostActive(int nbUsersActive) {
 		 Session session = this.getSession();
 	        try {
-	        	//Query query = session.createQuery("from User u join
+	        	Query query = session.createQuery("from User u join f_posts f where g.id in (:groupIds)");
 	        	query.setMaxResults(nbUsersActive);
 	            return query.list();
 	        } catch (Exception e) {
@@ -79,7 +80,7 @@ public class UserDaoImpl extends AbstractDao<User, Long> implements UserDao {
 	        } finally {
 	            session.close();
 	        }
-	}*/
+	}
     
 
 

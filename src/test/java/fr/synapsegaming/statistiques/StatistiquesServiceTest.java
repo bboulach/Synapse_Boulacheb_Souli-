@@ -6,9 +6,10 @@ import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import fr.synapsegaming.commons.dao.AbstractDaoTest;
 import fr.synapsegaming.statistiques.service.StatistiquesService;
 
-public class StatistiquesServiceTest {
+public class StatistiquesServiceTest extends AbstractDaoTest {
 	
 	@Autowired
 	StatistiquesService statistiquesService;

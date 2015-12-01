@@ -17,7 +17,6 @@ import fr.synapsegaming.raid.service.PatchService;
 import fr.synapsegaming.ui.service.ResourceService;
 import fr.synapsegaming.user.entity.User;
 import fr.synapsegaming.user.service.ClazzService;
-import fr.synapsegaming.statistiques.service.StatistiquesService;
 
 /**
  * <b>HomeController</b> route every action made from the "Home" page

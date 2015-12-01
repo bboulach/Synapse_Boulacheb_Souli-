@@ -7,7 +7,9 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class JsonReaderTest {
+import fr.synapsegaming.commons.dao.AbstractDaoTest;
+
+public class JsonReaderTest extends AbstractDaoTest {
 
     private static final String JSON_URL = "http://eu.battle.net/api/wow/character/krasus/XtremZ?fields=appearance";
     private static final String BAD_JSON_URL = "aa{a:a}]";
