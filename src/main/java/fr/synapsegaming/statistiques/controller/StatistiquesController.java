@@ -54,7 +54,7 @@ public class StatistiquesController extends AbstractController {
         page.addObject("RaceMostPlayed", statistiquesService.getRaceMostPlayed());
         page.addObject("SpecializationMostPlayed", statistiquesService.getSpecializationMostPlayed());
         page.addObject("UsersWithoutPicture", statistiquesService.getUsersWithoutPicture());
-        //page.addObject("UsersMostActive", statistiquesService.getUsersMostActive());
+        page.addObject("UsersMostActive", statistiquesService.getUsersMostActive());
         
 
        /* if (user != null){

@@ -39,6 +39,10 @@
 	<div id="news-wrapper">
 		<jsp:include page="portal/News.jsp"/>
 	</div>
+    @Test
+    public void testListUsersWithPicture(){
+		assertFalse(CollectionUtils.isEmpty(userDao.listUsersWithoutPicture()));
+    }
 <!-- 	<div id="videos-wrapper"> -->
 <%-- 		<jsp:include page="portal/Videos.jsp"/> --%>
 <!-- 	</div> -->
@@ -68,8 +72,9 @@
 			
 			<h4>Utilisateurs les plus actifs</h4>
 			<c:forEach items="${UsersMostActive}" var="users_mostActive">
-			<div>${ users_mostActives.name }</div>
+			<div>${ users_mostActive.nickname }</div>
 			</c:forEach>
+			</br></br></br></br></br></br>
 			
 	</div>
 	
