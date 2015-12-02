@@ -48,7 +48,6 @@ public class ClazzDaoImpl extends AbstractDao<Clazz, Long> implements ClazzDao {
    		Session session = this.getSession();
            try {
         	   Query query = session.createQuery("from Clazz c order by size(c.users) desc");
-               		//+ "group by uc.id order by count(*) desc, uc.name");
                query.setMaxResults(nbClazz);
                return query.list();
            } catch (Exception e) {

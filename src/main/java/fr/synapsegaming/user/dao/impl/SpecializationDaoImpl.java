@@ -32,7 +32,6 @@ implements SpecializationDao {
         try {
             Query query = session
                     .createQuery("from Specialization s join fetch s.clazz c where c.id = :idClass");
-            query.setParameter("idClass", idClass);
             return query.list();
         } catch (Exception e) {
             LOGGER.warn(e);
