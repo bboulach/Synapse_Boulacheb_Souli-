@@ -76,7 +76,7 @@
 				<div>${ users_mostActives.name }</div>
 			</c:forEach> -->
 
-
+<h1 class="bounceInLeft">Les statistiques</h1>
 
 			
 				  <div class="box">
@@ -132,6 +132,7 @@
 				<ul><li>
 					<c:forEach items="${UsersMostActive}"
 							var="users_active">
+							</br>
 							${ users_active.nickname }</br>
 							</br>
 						</c:forEach></li>
