@@ -1,6 +1,5 @@
 package fr.synapsegaming.user.dao;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -22,6 +21,7 @@ public class UserDaoTest extends AbstractDaoTest {
     private static final int UNEXISTING_GROUP_ID = 99;
     private static final List<Integer> EXISTING_GROUP_IDS = new ArrayList<Integer>();
     private static final List<Integer> UNEXISTING_GROUP_IDS = new ArrayList<Integer>();
+	private static final int NUMBER_USERS_MOSTACTIVE = 5;
 	
     @Before
     public void setUp() {
@@ -61,7 +61,7 @@ public class UserDaoTest extends AbstractDaoTest {
     
     @Test
     public void testListUsersMostActiveNotEmpty() {
-    	assertTrue(CollectionUtils.isNotEmpty(userDao.listUsersMostActive(5)));
+    	assertTrue(CollectionUtils.isNotEmpty(userDao.listUsersMostActive(NUMBER_USERS_MOSTACTIVE)));
     }
 
 }
