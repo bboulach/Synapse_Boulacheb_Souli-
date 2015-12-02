@@ -1,0 +1,61 @@
+
+
+.box {
+	width: 40%;
+	min-height: 650px;
+	margin-letf: auto;
+	margin-right: auto;
+	padding: 15px;
+	box-sizing: border-box;
+	display: inline-block;
+	background: #036C81;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	}
+
+
+
+
+.box li {
+	
+	color:white;
+	vertical-align: center;
+	display:inline;
+	padding-bottom : 50%;
+	font-size: 15px;
+	list-style-type:none;
+}
+
+.box ul  {
+	color: white;
+	color: #fff;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	
+	
+}
+
+.box h3{
+	font-family: "police";
+	color: white;
+	color: #fff;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 300;
+	font-size: 15x;
+	text-align: center;
+	font-weight: bold;
+	
+	
+}
+
+#actif {
+	min-height: 350px;
+
+
